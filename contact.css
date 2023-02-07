@@ -1,0 +1,701 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden ;
+
+}
+
+.general-wrapper{
+    min-height: 75vh;
+    position: relative;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.5)), url('images/car17.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%; 
+    overflow-x: hidden !important;
+    overflow: hidden;
+}
+nav{
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+nav .nav-logo{
+    background-image: url('images/Gt.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 150px;
+}
+.nav-links ul li {
+    display:inline-block;
+    padding: 20px;
+    list-style-type: none;
+}
+
+div{
+    overflow: hidden !important;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    /* text-rendering: geometricPrecision; */
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.nav-links ul li a::after{
+    content: '';
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background-color: orangered;
+    display: block;
+    transition: 0.6s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+.nav-icons{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+.nav-icons .fa-brands{
+    font-size: 25px;
+    border: 2px solid black;
+    padding: 3px 8px 3px 8px;
+}
+.text-div{
+    padding-top: 200px;
+    color: white;
+    margin-left: 60px;
+}
+.animation-line{
+    width:70%;
+    height: 2px;
+    background-color: red;
+    margin-top: 2%;
+    animation-name: Augustine-Chibueze;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes Augustine-Chibueze {
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 70%;
+        background-color: blue;
+    }
+    
+}
+.text-div h1{
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: 600;
+    line-height: 0.8;
+    margin-top: 2%;
+    color: white;
+    overflow:hidden ;
+}
+
+@media(max-width:1100px){
+    .nav-links ul li{
+        padding: 10px;
+    }
+    nav{
+        padding: 5px;
+    }
+    nav .nav-logo{
+        width:100px;
+    }
+    .nav-icons{
+        margin-right: 5%;
+    }
+    .nav-links ul li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+@media (max-width:880px){
+    .nav-links ul li a{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .nav-links ul li{
+        margin-right: 0%;
+    }
+}
+@media (min-width:760px){
+    .close-icon,.open-icon{
+        display: none !important;
+    }
+}
+@media (max-width:760px){
+    nav{
+        height: 100px;
+        margin: auto;
+        text-align: center;
+        flex-wrap: wrap;
+
+    }
+    nav .nav-logo{
+        width:150px;
+        height: 40px;
+        margin-left: 3%;
+    }
+    .nav-links{
+        background-color: orangered;
+        height: 100%;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        position: fixed;
+        z-index: 2;
+        transition: visibility 0s,opacity 0.5s ease-in;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .nav-links ul li{
+        display: block;
+        margin-top: 15%;
+    }
+    .nav-links ul li a{
+        color: white;
+        font-size: 20px;
+    }
+    
+    .nav-icons{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 0 10% 0 15%;
+    }
+    .close-icon{
+        font-size: 40px;
+        color: White;
+        display:block;
+        cursor: pointer;
+        margin-right: 55%;
+        margin-top: 5%;
+        padding-bottom: 20%;
+    }
+    .open-icon{
+        color: black;
+        font-size: 50px;
+        display: block;
+        margin-right: 8%;
+        cursor: pointer;
+    }
+
+    .text-div h1{
+        font-size: 35px;
+        margin-top: 7%;
+        
+    }
+    .text-div{
+    margin-left: 20px;
+    padding-top: 180px;
+    }
+}
+
+
+
+.contact-us{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width:92%;
+    background-color: transparent;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.contact-us main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-us main .contact-details{
+    background-color: transparent;
+    text-align: left;
+} 
+.get-in-touch{
+    width: 30% !important;
+    background-color: transparent !important;
+}
+.get-in-touch h2{
+    color: black;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 900;
+    padding-bottom: 35px;
+
+}
+.icon-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    margin-top: 30px;
+}
+.cover-contact{
+    width: 60%
+}
+.margin-text{
+    margin-right: 25%;
+}
+.icon-contact .fa-solid{
+    padding: 15px;
+    background-color: transparent;
+    border:2px solid black;
+}
+.text-contact{
+    text-align: left;
+}
+.text-contact h4{
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.text-contact p{
+    color: gray;
+    font-size: 20px;
+    font-weight: 400;
+}
+.send-us-a-message{
+    width: 55%;
+    background-color: transparent !important;
+    text-align: left;
+    overflow: hidden;
+}
+.send-us-a-message h2{
+    color: black;
+    font-size: 39px;
+    font-family: sans-serif;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+.send-us-a-message .input-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.send-us-a-message .input-flex .input-name-1,.input-name-2{
+    width: 100%;
+}
+::placeholder{
+    outline: gray;
+}
+.send-us-a-message .input-flex .input-tag{
+    width: 97%;
+    background-color: transparent;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid black;
+    outline: gray;
+    font-size: 17px;
+    margin-top: 7px;
+}
+ label{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+.email-input{
+    width: 100%;
+    margin-top: 7px;
+    height: 40px;
+    padding: 10px;
+    outline: gray;
+    font-size: 17px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+.email-label{
+    margin-top: 20% ;
+}
+textarea{
+    width: 100% !important;
+}
+.submit{
+    color:black;
+    font-family: sans-serif;
+    font-weight: 600;
+    transition: 0.7s;
+    width: 100%;
+    overflow: hidden;
+    text-transform: uppercase;
+    margin-top: 20px;
+    height: 50px;
+}
+.submit:hover{
+    background-color: orange;
+    overflow: hidden;
+}
+@media(max-width:1200px){
+    .get-in-touch h2, .send-us-a-message h2{
+        font-size: 30px;
+    }
+}
+@media (max-width:900px){
+    .contact-us{
+        padding-top:50px;
+        padding-bottom: 40px;
+    }
+    .icon-contact{
+        flex-direction: column;
+    }
+    .contact-details{
+        width: 100% !important;
+    }
+    .contact-us main{
+        flex-wrap: wrap !important;
+        flex-direction: column;
+    }
+    .contact-details{
+        width: 100% !important;
+        margin: auto;
+        text-align:center;
+    }
+    .text-contact{
+        margin: auto !important;
+        text-align:center !important;
+        width: 100% !important;
+    }
+    .cover-contact{
+        margin-right: auto !important;
+        margin-left: auto !important;
+        text-align:center !important;
+        width: 100% !important;
+    }
+    .get-in-touch h2{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .send-us-a-message{
+        margin-top:50px;
+    }
+    .imaginary-line{
+        height:2px;
+        width:100%;
+        background: gray;
+        margin-top: 40px;
+    }
+    .input-flex{
+        flex-direction:column;
+    }
+    .input-name-2 {
+        margin-top: 20px;
+    }
+    .input-name-1 label,.input-name-2 label{
+        font-size:15px;
+        font-weight:bold;
+    }
+    label{
+        font-size:15px;
+        font-weight:bold;
+    }
+    .input-tag{
+        width: 100% !important;
+    }
+    textarea{
+        height:100px;
+        margin-top:8px;
+        border: 1px solid black;
+    }
+}
+@media (max-width:500px){
+    .send-us-a-message h2{
+        font-size:25px;
+        font-weight: 600;
+    }
+}
+.subscribe-wrapper{
+    height: 350px;
+    width: 95%;
+    background-image: url('images/popcorn13.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 70px;
+}
+.subscribe-wrapper p{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-top: 70px;
+    text-align: left;
+}
+.subscribe-wrapper .hero-btn{
+   height: 40px;
+   width: 140px;
+    background-color: transparent;
+    border: 2px solid black;
+    margin-top: 30px ;
+
+}
+.subscribe-wrapper .hero-btn a{
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+}
+.icon-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-between;
+    max-width: 250px;
+}
+.icon-flex .fa-brands{
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 25px;
+}
+
+
+@media (max-width:900px){
+    .subscribe-wrapper{
+        padding-left: 20px;
+        margin-top: 20px !important;
+    }
+    .icon-flex .fa-brands{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .subscribe-wrapper p{
+        font-size: 27px;
+    }
+}
+
+
+
+
+.discount{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align:center;
+    overflow: hidden;
+}
+.intersected-in-us{
+    padding: 6% 2%;
+    background-image: url('images/car11.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding-top: 150px;
+    border-top: 2px solid black;
+    text-align: left;
+    overflow: hidden;
+}
+.intersected-in-us h2{
+    color:white;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight:900;
+}
+.intersected-in-us p{
+    color:white;
+    font-size:20px;
+    font-family:sans-serif;
+    margin-top: 2%;
+    max-width: 600px;
+}
+.intersected-in-us .hero-btn{
+    background-color: orange;
+    border: none;
+    
+}
+.hero-btn{
+    background-color: transparent;
+    height: 60px;
+    width: 180px;
+    border: 2px solid white;
+    margin-top: 3%;
+    overflow: hidden;
+}
+.intersected-in-us .hero-btn a{
+    color:black;
+    font-size:15px;
+    font-family:sans-serif;
+    font-weight:bolder;
+}
+
+.web-video-ads{
+    position: relative;
+    height: 400px;
+    padding-top: 100px;
+    padding-left: 50px;
+    background-color: rgb(15, 15, 15);
+    text-align: left;
+    width: 100%;
+    overflow: visible;
+}
+.web-video-ads h2{
+    color: white;
+    font-size:40px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+@media (max-width:1200px){
+    .intersected-in-us{
+        padding-top: 50px ;
+    }
+    .web-video-ads{
+        position: unset;
+        height: unset;
+        padding: 5% 4%;
+    }
+    .web-video-ads h2{
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}
+
+
+footer{
+    background-image: url('images/car11.jpg');
+    background-size:cover;
+    background-position: center;
+    width:100%;
+}
+.footer-opacity{
+    background: rgba(0,0,0,0.9);
+    height:100%;
+    width:100%;
+}
+.footer-opacity img{
+    height: 150px;
+    width: 150px;
+
+}
+.footer-opacity h4{
+    font-size:40px;
+    color:white;
+    font-weight:bolder;
+    font-family:sans-serif;
+    /* margin-top: 5px; */
+}
+.footer-opacity p{
+    font-size:18px;
+    color:white;
+    font-family:sans-serif;
+    margin-top: 20px;
+    font-weight:lighter;
+}
+.footer-opacity .line-div{
+    margin-top:50px;
+    background-color: gray;
+    height:1px;
+    width:100%;
+}
+.footer-opacity .last-web-text{
+    color: white;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-weight:lighter;
+}
+.rotate-icon{
+    background-color: white;
+    height:53px;
+    width:150px;
+    position: relative;
+    border-radius: 12px;
+    object-fit: contain;
+    box-shadow: 2px 2px 15px 2px rgb(0 0 0 / 17%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rotate-icon-small{
+    background-color: white;
+    height:50px;
+    width:50px;
+    /* transform: rotate(45deg); */
+    position: absolute;
+    /* left: 0; */
+    height: 20px;
+    width: 20px;
+    /* transform: rotate(133deg); */
+    position: absolute;
+    left: -10px;
+    /* left: -8%; */
+    top: 50%;
+    z-index: -1;
+    box-shadow: 2px 2px 15px 2px rgb(0 0 0 / 17%);
+        -webkit-transform: translateY(-50%) rotate(135deg);
+        transform: translateY(-50%) rotate(135deg);
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.btn-btn-btn{
+    background-color: rgb(71, 218, 71);
+    color: white;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: none;
+    font-size: 40px;
+
+}
+.img-img{
+   transform: linear .2s ease-in,ease-out;
+}
+.img-img:hover{
+    cursor: pointer;
+   transform: rotate(250deg);
+}
+.whatsapp-icon{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    margin-right: 25%;
+    margin-left: 5%;
+}
+.general-whatsapp-icon{
+    position: absolute;
+    top: 79%;
+    right: 103%;
+    margin-top:5%;
+    
+}
+.message-us{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.message-us:hover{
+    color: orange;
+}
+@media (max-width:1200px){
+    .general-whatsapp-icon{
+        margin-top: 10%;
+        float:left;
+        margin-right: 3%;
+    }

@@ -1,0 +1,500 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden ;
+
+}
+
+.general-wrapper{
+    min-height: 75vh;
+    position: relative;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.5)), url('images/car17.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%; 
+    overflow-x: hidden !important;
+    overflow: hidden;
+}
+nav{
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+nav .nav-logo{
+    background-image: url('images/Gt.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 150px;
+}
+.nav-links ul li {
+    display:inline-block;
+    padding: 20px;
+    list-style-type: none;
+}
+
+div{
+    overflow: hidden !important;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    /* text-rendering: geometricPrecision; */
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.nav-links ul li a::after{
+    content: '';
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background-color: orangered;
+    display: block;
+    transition: 0.6s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+.nav-icons{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+.nav-icons .fa-brands{
+    font-size: 25px;
+    border: 2px solid black;
+    padding: 3px 8px 3px 8px;
+}
+.text-div{
+    padding-top: 200px;
+    color: white;
+    margin-left: 60px;
+}
+.animation-line{
+    width:70%;
+    height: 2px;
+    background-color: red;
+    margin-top: 2%;
+    animation-name: Augustine-Chibueze;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes Augustine-Chibueze {
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 70%;
+        background-color: blue;
+    }
+    
+}
+.text-div h1{
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: 600;
+    line-height: 0.8;
+    margin-top: 2%;
+    color: white;
+    overflow:hidden ;
+}
+
+@media(max-width:1100px){
+    .nav-links ul li{
+        padding: 10px;
+    }
+    nav{
+        padding: 5px;
+    }
+    nav .nav-logo{
+        width:100px;
+    }
+    .nav-icons{
+        margin-right: 5%;
+    }
+    .nav-links ul li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+@media (max-width:880px){
+    .nav-links ul li a{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .nav-links ul li{
+        margin-right: 0%;
+    }
+}
+@media (min-width:760px){
+    .close-icon,.open-icon{
+        display: none !important;
+    }
+}
+@media (max-width:760px){
+    nav{
+        height: 100px;
+        margin: auto;
+        text-align: center;
+        flex-wrap: wrap;
+
+    }
+    nav .nav-logo{
+        width:150px;
+        height: 40px;
+        margin-left: 3%;
+    }
+    .nav-links{
+        background-color: orangered;
+        height: 100%;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        position: fixed;
+        z-index: 2;
+        transition: visibility 0s,opacity 0.5s ease-in;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .nav-links ul li{
+        display: block;
+        margin-top: 15%;
+    }
+    .nav-links ul li a{
+        color: white;
+        font-size: 20px;
+    }
+    
+    .nav-icons{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 0 10% 0 15%;
+    }
+    .close-icon{
+        font-size: 40px;
+        color: White;
+        display:block;
+        cursor: pointer;
+        margin-right: 55%;
+        margin-top: 5%;
+        padding-bottom: 20%;
+    }
+    .open-icon{
+        color: black;
+        font-size: 50px;
+        display: block;
+        margin-right: 8%;
+        cursor: pointer;
+    }
+
+    .text-div h1{
+        font-size: 35px;
+        margin-top: 7%;
+        
+    }
+    .text-div{
+    margin-left: 20px;
+    padding-top: 180px;
+    }
+}
+
+.videos-project{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 40px;
+}
+.videos{
+    width: 28%;
+    height: 450px;
+    margin-bottom: 80px;
+    background-color: black;
+    text-align: center;
+}
+.extension{
+    margin-bottom: 40px;
+}
+.videos img{
+    height: 60%;
+    width: 100%;
+    display: block;
+}
+.centering{
+    width: 90%;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+}
+.videos h3{
+    margin-top: 50px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 20px
+}
+.hero-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
+    overflow: hidden;
+    background-color: tomato;
+    margin-top: 10px;
+}
+.hero-btns a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+@media (max-width:1000px){
+    .videos-project{
+        flex-wrap: wrap;
+    }
+    .videos{
+        width: 48% !important;
+    }
+}
+@media (max-width:600px){
+    .videos-project{
+        flex-direction: column;
+    }
+    .videos{
+        width: 100% !important;
+        margin-bottom: 40px;
+    }
+    
+}
+
+
+
+
+
+.discount{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align:center;
+    overflow: hidden;
+}
+.intersected-in-us{
+    padding: 6% 2%;
+    background-image: url('images/car11.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding-top: 150px;
+    border-top: 2px solid black;
+    text-align: left;
+    overflow: hidden;
+}
+.intersected-in-us h2{
+    color:white;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight:900;
+}
+.intersected-in-us p{
+    color:white;
+    font-size:20px;
+    font-family:sans-serif;
+    margin-top: 2%;
+    max-width: 600px;
+}
+.intersected-in-us .hero-btn{
+    background-color: orange;
+    border: none;
+    
+}
+.hero-btn{
+    background-color: transparent;
+    height: 60px;
+    width: 180px;
+    border: 2px solid white;
+    margin-top: 3%;
+    overflow: hidden;
+}
+.intersected-in-us .hero-btn a{
+    color:black;
+    font-size:15px;
+    font-family:sans-serif;
+    font-weight:bolder;
+}
+
+.web-video-ads{
+    position: relative;
+    height: 400px;
+    padding-top: 100px;
+    padding-left: 50px;
+    background-color: rgb(15, 15, 15);
+    text-align: left;
+    width: 100%;
+    overflow: visible;
+}
+.web-video-ads h2{
+    color: white;
+    font-size:40px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+@media (max-width:1200px){
+    .intersected-in-us{
+        padding-top: 50px ;
+    }
+    .web-video-ads{
+        position: unset;
+        height: unset;
+        padding: 5% 4%;
+    }
+    .web-video-ads h2{
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+}
+
+
+footer{
+    background-image: url('images/car11.jpg');
+    background-size:cover;
+    background-position: center;
+    width:100%;
+}
+.footer-opacity{
+    background: rgba(0,0,0,0.9);
+    height:100%;
+    width:100%;
+}
+.footer-opacity img{
+    height: 150px;
+    width: 150px;
+
+}
+.footer-opacity h4{
+    font-size:40px;
+    color:white;
+    font-weight:bolder;
+    font-family:sans-serif;
+    /* margin-top: 5px; */
+}
+.footer-opacity p{
+    font-size:18px;
+    color:white;
+    font-family:sans-serif;
+    margin-top: 20px;
+    font-weight:lighter;
+}
+.footer-opacity .line-div{
+    margin-top:50px;
+    background-color: gray;
+    height:1px;
+    width:100%;
+}
+.footer-opacity .last-web-text{
+    color: white;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-weight:lighter;
+}
+.rotate-icon{
+    background-color: white;
+    height:53px;
+    width:150px;
+    position: relative;
+    border-radius: 12px;
+    object-fit: contain;
+    box-shadow: 2px 2px 15px 2px rgb(0 0 0 / 17%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rotate-icon-small{
+    background-color: white;
+    height:50px;
+    width:50px;
+    /* transform: rotate(45deg); */
+    position: absolute;
+    /* left: 0; */
+    height: 20px;
+    width: 20px;
+    /* transform: rotate(133deg); */
+    position: absolute;
+    left: -10px;
+    /* left: -8%; */
+    top: 50%;
+    z-index: -1;
+    box-shadow: 2px 2px 15px 2px rgb(0 0 0 / 17%);
+        -webkit-transform: translateY(-50%) rotate(135deg);
+        transform: translateY(-50%) rotate(135deg);
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.btn-btn-btn{
+    background-color: rgb(71, 218, 71);
+    color: white;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: none;
+    font-size: 40px;
+
+}
+.img-img{
+   transform: linear .2s ease-in,ease-out;
+}
+.img-img:hover{
+    cursor: pointer;
+   transform: rotate(250deg);
+}
+.whatsapp-icon{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    margin-right: 25%;
+    margin-left: 5%;
+}
+.general-whatsapp-icon{
+    position: absolute;
+    top: 79%;
+    right: 103%;
+    margin-top:5%;
+    
+}
+.message-us{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.message-us:hover{
+    color: orange;
+}
+@media (max-width:1200px){
+    .general-whatsapp-icon{
+        margin-top: 10%;
+        float:left;
+        margin-right: 3%;
+    }
+}

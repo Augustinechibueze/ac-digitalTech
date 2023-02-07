@@ -1,0 +1,936 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden ;
+}
+
+.general-wrapper{
+    min-height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.5)), url('images/car17.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%; 
+    overflow-x: hidden !important;
+    animation-name: AugustineChibueze;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    overflow: hidden;
+
+}
+@keyframes AugustineChibueze{
+    0%{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('images/car-gif-4.jpg');
+    background-size:cover;
+    background-position: center; 
+    }
+    100%{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('images/car-gif.gif');
+    background-size:cover;
+    background-position: center; 
+    }
+}
+nav{
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    /* flex-direction: row-reverse */
+}
+nav .nav-logo{
+    background-image: url('images/Gt.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 150px;
+}
+.nav-links ul li {
+    display:inline-block;
+    padding: 20px;
+    list-style-type: none;
+}
+
+div{
+    overflow: hidden !important;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    /* text-rendering: geometricPrecision; */
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.nav-links ul li a::after{
+    content: '';
+    margin: auto;
+    width: 0;
+    height: 2px;
+    background-color: orangered;
+    display: block;
+    transition: 0.6s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+.nav-icons{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+.nav-icons .fa-brands{
+    font-size: 25px;
+    border: 2px solid black;
+    padding: 3px 8px 3px 8px;
+}
+.text-div{
+    padding-top: 200px;
+    color: white;
+    margin-left: 60px;
+    /* width: 50%; */
+}
+.text-div h4{
+    font-size: 30px;
+}
+.animation-line{
+    width:70%;
+    height: 2px;
+    background-color: red;
+    margin-top: 2%;
+    animation-name: Augustine-Chibueze;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes Augustine-Chibueze {
+    0%{
+        width: 0%
+    }
+    100%{
+        width: 70%;
+        background-color: blue;
+    }
+    
+}
+.text-div h1{
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: 600;
+    line-height: 0.8;
+    margin-top: 2%;
+    color: white;
+    overflow:hidden ;
+}
+
+.text-div h2{
+    color: orange;
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: 600;
+    overflow:hidden ;
+
+
+}
+.text-div-extention{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+    max-width: 600px
+}
+.hero-btn{
+    background-color: transparent;
+    height: 60px;
+    width: 180px;
+    border: 2px solid white;
+    margin-top: 3%;
+    overflow: hidden;
+}
+.hero-btn:hover{
+    background-color: orangered;
+}
+.hero-btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+@media(max-width:1100px){
+    .nav-links ul li{
+        padding: 10px;
+    }
+    nav{
+        padding: 5px;
+    }
+    nav .nav-logo{
+        width:100px;
+    }
+    .nav-icons{
+        margin-right: 5%;
+    }
+    .nav-links ul li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+@media (max-width:880px){
+    .nav-links ul li a{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .nav-links ul li{
+        margin-right: 0%;
+    }
+}
+@media (min-width:760px){
+    .close-icon,.open-icon{
+        display: none !important;
+    }
+}
+@media (max-width:760px){
+    nav{
+        height: 100px;
+        /* padding: 0 0 0 0 ; */
+        margin: auto;
+        text-align: center;
+        flex-wrap: wrap;
+
+    }
+    nav .nav-logo{
+        width:150px;
+        height: 40px;
+        margin-left: 3%;
+    }
+    .nav-links{
+        background-color: orangered;
+        height: 100%;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        position: fixed;
+        z-index: 2;
+        transition: visibility 0s,opacity 0.5s ease-in;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .nav-links ul li{
+        display: block;
+        margin-top: 15%;
+    }
+    .nav-links ul li a{
+        color: white;
+        font-size: 20px;
+    }
+    
+    .nav-icons{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 0 10% 0 15%;
+    }
+    .close-icon{
+        font-size: 40px;
+        color: White;
+        display:block;
+        cursor: pointer;
+        margin-right: 55%;
+        margin-top: 5%;
+        padding-bottom: 20%;
+    }
+    .open-icon{
+        color: black;
+        font-size: 50px;
+        display: block;
+        margin-right: 8%;
+        cursor: pointer;
+    }
+
+    .text-div h1{
+        font-size: 35px;
+        margin-top: 7%;
+        
+    }
+    .text-div h2{
+        font-size:40px; 
+    }
+    .text-div-extention{
+        font-size: 20px;
+        margin-top: 3%;
+    }
+    .hero-btn{
+        margin-top: 15%;
+    }
+   
+    .text-div{
+    /* width: 90%; */
+    margin-left: 20px;
+    padding-top: 180px;
+    }
+}
+
+
+.about-us{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    text-align:center;
+    background-color: transparent;
+    border: 2px solid gray;
+    height: 600px;
+    position: relative;
+    overflow:hidden ;
+
+}
+.about-us-row{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 7% 3%; 
+    background-color: transparent;
+     
+}
+.abouts-us-div{
+    margin-top: 5%;
+    width: 48%;
+    height: 450px;
+    margin-bottom: 25%;
+    /* overflow: hidden; */
+}
+.img-about-us{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.5)), url('images/car16.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+}
+.img-text-positioning{
+    position: absolute;
+    min-height: 80px;
+    max-width: 600px;
+    background-color: white;
+    color: black;
+    top:80%;
+    /* padding-left:20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0px 5px rgba(104, 104, 104, 0.8);
+    overflow: hidden;
+    /* z-index: 32; */
+}
+.img-text-positioning p{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.text-about-us{
+    text-align: left;
+    overflow:hidden !important;
+
+}
+.text-about-us h5{
+    color:black;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: sans-serif;
+    overflow:hidden ;
+
+}
+.text-about-us h2{
+    color: black;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-family: arial black;
+    margin-top: 4%;
+    line-height: 1.2;
+    overflow:hidden ;
+}
+.text-about-us p{
+    color: gray;
+    font-size: 24px;
+}
+.text-about-us .hero-btns{
+    border: 2px solid black ;
+    height: 50px;
+    width: 170px;
+    background-color: orangered;
+    margin-top: 5%;
+    transition: 0.6s;
+    border: none;
+}
+.text-about-us .hero-btns a{
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.text-about-us .hero-btns:hover{
+    background-color: black;
+    color: white;
+}
+.text-about-us .hero-btns:hover{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:900px){
+    .img-text-positioning{
+        position: unset;
+    }
+    .about-us{
+        padding: 0 2% 30px 2%;
+        float: left;
+        height: unset;
+}
+    .text-about-us h2{
+        font-size: 25px;
+    }
+   .text-about-us{
+       /* margin-top: 60%; */
+   }
+   .abouts-us-div{
+       margin-bottom:15%;
+   }
+   .text-about-us .hero-btns{
+       overflow-y:visible !important;
+       position: absolute;
+       
+   }
+}
+
+@media (max-width:790px){
+    .about-us-row{
+        flex-direction: column;
+        flex-basis: unset;
+    }
+    .abouts-us-div{
+        width: 100%;
+        /* margin-bottom: 25%; */
+    }
+    .about-us{
+        height: unset;
+        
+    }
+    .text-about-us p{
+        margin-top: 5%;
+        
+    }
+}
+
+.our-vision{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    text-align:center;
+    background-color: transparent;
+    border: none;
+}
+.about-us-row{
+    padding: 7% 3%; 
+    padding: unset;
+    align-items: flex-start;
+}
+.vision-col{
+    width: 32%;
+    text-align: left;
+    margin-bottom: 5%;
+    background-color: transparent;
+}
+.vision-col h4{
+    color: black;
+    font-size: 40px;
+    font-family: verdana;
+}
+.vision-col p{
+    color: gray;
+    font-size: 20px;
+    margin-top: 3%;
+    font-family: sans-serif;
+}
+.vision-col h3{
+    color: black;
+    font-size: 20px;
+    margin-top: 3%;
+}
+@media (max-width:790px){
+    .vision-col{
+        width: 100%;
+    }
+}
+.bigger-text-container{
+    /* text-align: center;
+    margin: auto;
+    width:90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+    background-color: transparent;
+    overflow: hidden;
+
+}
+.animation-text{
+    text-align: center;
+    font-family: Verdana;
+    font-weight: bolder;
+    background: url('images 1/car14.jpg');
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-position: center;
+    background-size: cover;
+    animation-name: sxchoolboy;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+.bigger-text{
+  font-size:100px;
+    
+}
+.production-text{
+    font-size: 150px;     
+}
+@keyframes sxchoolboy{
+    0%{
+        background: url('images/car3.jpg');
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-position: center;
+    background-size: cover;
+    }
+    25%{
+        background: url('images/car10.jpg');
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-position: center;
+    background-size: cover;
+    }
+    50%{
+        background: url('images/car11.jpg');
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-position: center;
+    background-size: cover;
+    }
+    80%{
+        background: url('images/car12.jpg');
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-position: center;
+    background-size: cover;
+    }
+    100%{
+        background: url('images/car16.jpg');
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-position: center;
+    background-size: cover;
+    }
+}
+@media (max-width:1200px){
+    .production-text{
+        font-size: 100px;
+        text-align: center;
+        font-weight:900;
+        font-family: arial black;
+    }
+    .bigger-text{
+        font-size:100px;
+    }
+}
+@media (max-width:1000px){
+    .production-text{
+        font-size: 100px;
+        text-align: center;
+        font-weight:900;
+        font-family: arial black;
+    }
+    .bigger-text{
+        font-size:60px;
+    }
+}
+@media (max-width:760px){
+    .production-text{
+        font-size: 70px;
+        text-align: center;
+        font-weight:900;
+        font-family: arial black;
+    }
+    .bigger-text{
+        font-size:60px;
+    }
+}
+
+@media (max-width:530px){
+    .production-text{
+        font-size: 40px;
+        text-align: center;
+        font-weight:900;
+        font-family: arial black;
+    }
+    .bigger-text{
+        font-size:40px;
+    }
+}
+.our-projects{
+    width: 99%;
+    margin: auto;
+    text-align:center;
+}
+.our-projects-flex{
+    display: flex;
+    justify-content: space-between
+}
+.collection-div{
+    padding: 4% 4%; 
+    width: 100%;
+    background-color: black;
+}
+.collection{
+    text-align:left;
+}
+.collection h4{
+    color:white;
+    font-size:25px;
+    font-weight: 600;
+}
+.collection h6{
+    font-size:45px;
+    font-family:verdana;
+    color: white;
+    
+}
+.margin-img{
+    margin-top: 5px;
+}
+.images-property{
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 24%;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align:center;
+}
+.img1{
+    background-image: url('images/car11.jpg')
+
+}
+.img2{
+    background-image: url('images/car5.jpg')
+
+}
+.img3{
+    background-image: url('images/car.jpg')
+
+}
+.img4{
+    background-image: url('images/car14.jpg')
+}
+
+@media (max-width:900px){
+    .our-projects-flex{
+        flex-direction: column;
+
+    }
+    .images-property{
+        width: 98%;
+    }
+}
+.iframe-video{
+    width: 100%;
+    height:100%;
+    display:inline-block;
+}
+.discount{
+    width: 98%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align:center;
+    overflow: hidden;
+}
+.intersected-in-us{
+    padding: 6% 2%;
+    background-image: url('images/car11.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding-top: 150px;
+    border-top: 2px solid black;
+    text-align: left;
+    overflow: hidden;
+}
+.intersected-in-us h2{
+    color:white;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight:900;
+}
+.intersected-in-us p{
+    color:white;
+    font-size:20px;
+    font-family:sans-serif;
+    margin-top: 2%;
+    max-width: 600px;
+}
+.intersected-in-us .hero-btn{
+    background-color: orange;
+    border: none;
+    
+}
+.intersected-in-us .hero-btn a{
+    color:black;
+    font-size:15px;
+    font-family:sans-serif;
+    font-weight:bolder;
+}
+
+.web-video-ads{
+    position: relative;
+    height: 400px;
+    padding-top: 100px;
+    padding-left: 50px;
+    background-color: rgb(15, 15, 15);
+    text-align: left;
+    width: 100%;
+    overflow: visible;
+}
+.web-video-ads h2{
+    color: white;
+    font-size:40px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.position-discount{
+    padding-top: 50px;
+    background-color: white;
+    width: 450px;
+    border: 1px solid gray;
+    text-align: center;
+    height: 480px;
+    position: absolute;
+    bottom: 40px;
+    left: 60%;
+
+}
+.position-discount h2{
+    color: black;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: Arial black;
+}
+.position-discount h3{
+    color: orange;
+    font-weight: bolder;
+    font-size: 150px;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+.position-discount p{
+    color:black;
+    font-size: 25px;
+    font-family: verdana;
+    font-weight: bold;
+    margin-top: 10px
+}
+.position-discount .hero-btn{
+    background-color: orange;
+    width: 140px;
+    margin-top:30px;
+}
+.position-discount .hero-btn a{
+    color:black;
+    font-size:15px;
+    font-family: sans-serif;
+    font-weight:bolder;
+}
+@media (max-width:1200px){
+    .intersected-in-us{
+        padding-top: 50px ;
+    }
+    .web-video-ads{
+        position: unset;
+        height: unset;
+        padding: 5% 4%;
+    }
+    .web-video-ads h2{
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .position-discount{
+        margin: auto;
+        text-align: center;
+        padding-top:50px;
+        padding-bottom:50px;
+        position: unset;
+        top: 0;
+        left: 0;
+        height: unset !important;
+        width:95% ;
+    }
+    .position-discount h2{
+        font-size: 40px;
+    }
+    .position-discount h3{
+        font-size: 100px;
+    }
+    .position-discount p{    
+        font-size: 25px;
+    }
+    .position-discount .hero-btn{
+        background-color: orange;
+        width: 140px;
+        margin-top:20px;
+        height: 40px
+    }
+    .position-discount .hero-btn a{
+        color:black;
+        font-size:15px;
+        font-family: sans-serif;
+        font-weight:bolder;
+    }
+}
+footer{
+    background-image: url('images/car11.jpg');
+    background-size:cover;
+    background-position: center;
+    width:98%;
+}
+.footer-opacity{
+    background: rgba(0,0,0,0.9);
+    height:100%;
+    width:100%;
+}
+.footer-opacity img{
+    height: 150px;
+    width: 150px;
+
+}
+.footer-opacity h4{
+    font-size:40px;
+    color:white;
+    font-weight:bolder;
+    font-family:sans-serif;
+    /* margin-top: 5px; */
+}
+.footer-opacity p{
+    font-size:18px;
+    color:white;
+    font-family:sans-serif;
+    margin-top: 20px;
+    font-weight:lighter;
+}
+.footer-opacity .line-div{
+    margin-top:50px;
+    background-color: gray;
+    height:1px;
+    width:100%;
+}
+.footer-opacity .last-web-text{
+    color: white;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-weight:lighter;
+}
+.rotate-icon{
+    background-color: white;
+    height:53px;
+    width:150px;
+    position: relative;
+    border-radius: 12px;
+    object-fit: contain;
+    box-shadow: 2px 2px 15px 2px rgb(0 0 0 / 17%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rotate-icon-small{
+    background-color: white;
+    height:50px;
+    width:50px;
+    /* transform: rotate(45deg); */
+    position: absolute;
+    /* left: 0; */
+    height: 20px;
+    width: 20px;
+    /* transform: rotate(133deg); */
+    position: absolute;
+    left: -10px;
+    /* left: -8%; */
+    top: 50%;
+    z-index: -1;
+    box-shadow: 2px 2px 15px 2px rgb(0 0 0 / 17%);
+        -webkit-transform: translateY(-50%) rotate(135deg);
+        transform: translateY(-50%) rotate(135deg);
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.btn-btn-btn{
+    background-color: rgb(71, 218, 71);
+    color: white;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: none;
+    font-size: 40px;
+
+}
+.img-img{
+   transform: linear .2s ease-in,ease-out;
+}
+.img-img:hover{
+    cursor: pointer;
+   transform: rotate(250deg);
+}
+.whatsapp-icon{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    margin-right: 25%;
+    margin-left: 5%;
+}
+.general-whatsapp-icon{
+    position: absolute;
+    top: 79%;
+    right: 103%;
+    margin-top:5%;
+    
+}
+.message-us{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.message-us:hover{
+    color: orange;
+}
+@media (max-width:1200px){
+    .general-whatsapp-icon{
+        margin-top: 10%;
+        float:left;
+        margin-right: 3%;
+    }
+    /* .rotate-icon{
+        display: none;
+    } */
+}
+
+
+
+/* @media (min-width:40px) and (max-width:5090px){
+
+} */
