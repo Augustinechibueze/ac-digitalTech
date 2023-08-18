@@ -20,18 +20,7 @@
     overflow: hidden;
 
 }
-@keyframes AugustineChibueze{
-    0%{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('images/car-gif-4.jpg');
-    background-size:cover;
-    background-position: center; 
-    }
-    100%{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('images/car-gif.gif');
-    background-size:cover;
-    background-position: center; 
-    }
-}
+
 nav{
     padding: 0% 5%;
     display: flex;
